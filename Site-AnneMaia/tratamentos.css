@@ -1,0 +1,216 @@
+:root {
+    --cinza-claro: #F6F3F4;
+    --cinza-escuro: #998991;
+    --bege-amarelado: #D5B58A;
+    --rosa-escuro: #DE768A;
+    --nav-height: 15rem; /* Altura padrão da navegação */
+    font-size: 62.5%;
+}
+
+#banner {
+    width: 100%;
+    margin: 0; /* Remove completamente o espaço inferior */
+}
+
+#tratamentos {
+    padding: 0;
+    margin-top: -150px; /* Sobreposição para reduzir ainda mais a distância */
+}
+
+.tratamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5%; /* Padding vertical reduzido para 15px */
+    width: 100%;
+}
+
+.tratamento.normal {
+    flex-direction: row;
+    background-color: white;
+}
+
+.tratamento.alternado {
+    flex-direction: row-reverse;
+    background-color: var(--cinza-claro);
+}
+
+.tratamento .imagem {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.tratamento .imagem img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tratamento .conteudo {
+    flex: 1;
+    padding: 0 10px; /* Reduzido levemente o padding lateral */
+    max-width: 600px;
+    text-align: left;
+}
+
+.tratamento .conteudo .titulo {
+    font-size: 3.2rem; /* Mantém o tamanho do título */
+    color: var(--rosa-escuro);
+    margin-bottom: 15px; /* Espaçamento entre título e parágrafo */
+    line-height: 1.4; /* Ajuste de legibilidade */
+    text-align: left; /* Alinha os títulos à esquerda */
+    font-weight: 500; /* Reduz o peso da fonte (antes provavelmente era 700 ou maior) */
+}
+
+.tratamento .conteudo p {
+    font-size: 1.9rem;
+    color: var(--cinza-escuro);
+    line-height: 1.6;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 15px; /* Espaço entre o texto e o botão */
+}
+
+.btn-agende {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 3px 6px; /* Reduzido o padding */
+    background-color: var(--bege-amarelado); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 2.2rem; /* Fonte um pouco maior */
+    font-weight: 400; /* Remove o bold */
+    text-decoration: none;
+    border-radius: 6px; /* Arredondamento menor */
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agende:hover {
+    background-color: #c39c65; /* Tom mais escuro para hover */
+}
+
+@media (max-width: 1030px) {
+    #tratamentos {
+        margin-top: -10%; /* Margem levemente maior para telas muito pequenas */
+    }
+}
+
+@media (max-width: 768px) {
+    #banner {
+        padding-top: calc(var(--nav-height) + 20px); /* Ajuste dinâmico baseado na altura da nav */
+        overflow: hidden;
+    }
+    #banner .banner-conteudo img {
+        width: 120%; /* Amplia a largura da imagem */
+        max-width: none; /* Remove restrições de largura */
+        display: block; /* Remove qualquer espaçamento indesejado */
+        margin: 0 auto; /* Centraliza a imagem */
+        margin-left: -10%; /* Centraliza visualmente */
+    }
+
+    #tratamentos {
+        margin-top: -14%; /* Margem levemente maior para telas muito pequenas */
+    }
+
+    .tratamento {
+        flex-direction: column; /* Imagem em cima e conteúdo embaixo */
+        text-align: center;
+        padding: 10px 5%; /* Padding reduzido para telas menores */
+    }
+
+    .tratamento.normal {
+        flex-direction: column;
+    }
+
+    .tratamento.alternado {
+        flex-direction: column;
+    }
+
+    .tratamento .imagem img {
+        width: 65%; /* Diminui um pouco mais o tamanho da imagem */
+        margin-bottom: 20px; /* Espaçamento entre imagem e conteúdo */
+    }
+
+    .tratamento .conteudo {
+        padding: 0;
+        text-align: center; /* Alinha título e texto ao centro */
+    }
+
+    .tratamento .conteudo .titulo {
+        font-size: 2.8rem; /* Ajusta tamanho do título */
+        margin-bottom: 15px; /* Espaço entre o título e o parágrafo */
+        line-height: 1.4; /* Ajuste de legibilidade */
+        text-align: center;
+    }
+
+    .tratamento .conteudo p {
+        font-size: 1.6rem; /* Ajusta tamanho do texto */
+        margin-top: 10px; /* Espaçamento claro entre o título e o texto */
+        line-height: 1.6; /* Ajuste de legibilidade */
+        text-align: center;
+    }
+
+    .btn-agende {
+        font-size: 1.8rem; /* Aumenta o tamanho do botão */
+        padding: 3px 6px; /* Padding constante */
+        width: auto; /* Ajusta largura automaticamente */
+        margin-bottom: 7px;
+        margin-top: 3px;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        padding-top: calc(var(--nav-height) + 20px); /* Ajuste dinâmico baseado na altura da nav */
+    }
+    #banner .banner-conteudo img {
+        width: 160%; /* Amplia a largura da imagem */
+        max-width: none; /* Remove restrições de largura */
+        display: block; /* Remove qualquer espaçamento indesejado */
+        margin: 0 auto; /* Centraliza a imagem */
+        margin-left: -24%; /* Centraliza visualmente */
+    }
+
+    #tratamentos {
+        margin-top: -22%; /* Margem levemente maior para telas muito pequenas */
+    }
+
+    .tratamento {
+        padding: 8px 5%; /* Padding ainda menor */
+    }
+
+    .tratamento .imagem img {
+        width: 60%; /* Reduz ainda mais o tamanho da imagem */
+        margin-bottom: 15px; /* Espaçamento menor em telas muito pequenas */
+    }
+
+    .tratamento .conteudo {
+        text-align: center; /* Alinha título e texto ao centro */
+    }
+
+    .tratamento .conteudo .titulo {
+        font-size: 2.5rem; /* Título menor em telas muito pequenas */
+        margin-bottom: 10px; /* Espaço entre o título e o parágrafo */
+        line-height: 1.4; /* Ajuste de legibilidade */
+    }
+
+    .tratamento .conteudo p {
+        font-size: 1.4rem; /* Texto menor em telas pequenas */
+        margin-top: 8px; /* Espaçamento claro entre o título e o texto */
+        line-height: 1.6; /* Ajuste de legibilidade */
+    }
+
+    .btn-agende {
+        font-size: 1.8rem; /* Botão menor em telas muito pequenas */
+        padding: 3px 6px; /* Padding constante */
+        width: auto; /* Ajusta largura automaticamente */
+        margin-bottom: 7px;
+        margin-top: 3px;
+    }
+}

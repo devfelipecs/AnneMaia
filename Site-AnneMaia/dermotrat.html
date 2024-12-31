@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anne Maia - Dermotrat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./tratamentos.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav id="navigation">
+    <div class="wrapper">
+      <a href="index.html#home" class="logo">
+        <img src="assets/Index/Marca.png" alt="Logo Anne Maia" />
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li><a href="index.html#home" onclick="closeMenu()">Início</a></li>
+          <li><a href="index.html#about" onclick="closeMenu()">Sobre</a></li>
+          <li><a href="index.html#Procedimentos" onclick="closeMenu()">Procedimentos</a></li>
+          <li><a href="index.html#statsAbout" onclick="closeMenu()">Contato</a></li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" class="open-menu" onclick="openMenu()">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#DE768A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#DE768A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#DE768A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <button aria-expanded="true" aria-label="Fechar menu" class="close-menu" onclick="closeMenu()">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#DE768A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- BANNER -->
+  <section id="banner">
+    <div class="banner-conteudo">
+      <img src="assets/Dermotrat/Site-Dra-Anne-Maia-Páginas-Adicionais-Banner-Topo-Dermotrat-com-Texto.png" alt="Banner Dermotrat">
+    </div>
+  </section>
+
+  <!-- TRATAMENTOS -->
+  <section id="tratamentos">
+    <div class="tratamento normal">
+      <div class="imagem">
+        <img src="assets/Dermotrat/Site-Dra-Anne-Maia-Páginas-Adicionais-Dermotrat-Aparelho.png" 
+        alt="O Dermotrat" 
+        style="width: 80%; max-width: 400px; height: auto; border-radius: 50%; object-fit: cover; aspect-ratio: 1 / 1;">
+      </div>
+      <div class="conteudo">
+        <h2 class="titulo">O Dermotrat</h2>
+        <p style="font-size: 1.5rem;">Pode ser utilizado para o rejuvenescimento das áreas íntimas (masculinas e femininas), em tratamentos para flacidez e acne, clareamento, estimulando o colágeno, além de, promover a renovação celular.</p>
+        <a href="#" class="btn-agende">Agende um horário</a>
+      </div>
+    </div>
+
+    <div class="tratamento alternado">
+      <div class="imagem">
+        <img src="assets/Dermotrat/Site-Dra-Anne-Maia-Páginas-Adicionais-Dermotrat-Depilação.png" alt="Depilação">
+      </div>
+      <div class="conteudo">
+        <h2 class="titulo">Depilação (todos os tipos e fototipos)</h2>
+        <p style="font-size: 1.5rem;">A depilação a laser é um procedimento que utiliza feixes de luz para eliminar pelos indesejados de forma definitiva. O laser atua na melanina, o pigmento que dá cor aos pelos, removendo pelos de maneira precisa para conquistar uma pele suave e livre de pelos indesejados.</p>
+        <a href="#" class="btn-agende">Agende um horário</a>
+      </div>
+    </div>
+
+    <div class="tratamento normal">
+      <div class="imagem">
+        <img src="assets/Dermotrat/Site-Dra-Anne-Maia-Páginas-Adicionais-Dermotrat-Outros-Procedimentos.png" alt="Outros Procedimentos">
+      </div>
+      <div class="conteudo">
+        <h2 class="titulo">Outros Procedimentos</h2>
+        <p style="font-size: 1.5rem;">Descubra uma variedade de serviços, incluindo Perfect Glúteos, drenagem, Peeling, entre outros. Consulte-nos para orientações personalizadas e resultados surpreendentes em tratamentos estéticos.</p>
+        <a href="#" class="btn-agende">Agende um horário</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrapper">
+      <div class="footer-content">
+        <img src="assets/Index/Marca-rodapé.png" alt="Logo Anne Maia">
+        <div class="navFooter">
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#">Procedimentos</a>
+          <a href="#">Contato</a>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="assets/Index/Ícone-WhatsApp.png" alt="WhatsApp"></a>
+          <a href="#"><img src="assets/Index/Ícone-Facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/Index/Ícone-Instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+      <p>&copy; 2024 Copyright - Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <a href="#banner" id="backToTopButton">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="20" fill="#00856F" />
+      <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
+
+  <!-- ScrollReveal Library -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

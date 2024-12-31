@@ -6,10 +6,10 @@ function onScroll() {
   showBackToTopButtonOnScroll()
 
   activateMenuAtCurrentSection(home)
-  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(Procedimentos)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
-}
+}  
 
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
@@ -67,9 +67,9 @@ ScrollReveal({
   #home, 
   #home img, 
   #home .stats, 
-  #services,
-  #services header,
-  #services .card,
+  #Procedimentos,
+  #Procedimentos header,
+  #Procedimentos .card,
   #about, 
   #about header,
   #about content,

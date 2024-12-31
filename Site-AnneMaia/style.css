@@ -209,11 +209,10 @@ body.menu-expanded button path {
 }
 
 
-
 /* ////////////////////////////////////////////////Home//////////////////////////////////////////////// */
 #home {
   margin-top: calc(20% - var(--nav-height));
-  background-image: url(assets/Banner-sem-texto.png);
+  background-image: url(assets/Index/Banner-sem-texto.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -797,3 +796,4 @@ footer .social-links {
     filter: brightness(1.3);
     border: 1px solid var(--cinza-claro);
   }
+}
